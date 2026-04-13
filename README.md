@@ -18,3 +18,24 @@ Primary file:
 ## Design rule
 
 Keep this small, explicit, and machine-readable. Do not turn it into a second memory system.
+
+## Broader workflow
+
+### QA -> Shared
+`cka-qa` writes:
+- `theoryStatus`
+- `practicalFocus`
+
+### Lab -> Shared
+`cka-lab` writes:
+- `practicalFeedback`
+
+### Shared -> QA and Lab
+Both repos must read this file before planning work so theory and practice stay aligned.
+
+## Submodule rule
+
+In both parent repos, `cka-shared` is a git submodule.
+If `handoff.json` changes:
+1. commit and push inside `cka-shared`
+2. commit the updated submodule pointer in the parent repo
