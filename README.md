@@ -39,3 +39,10 @@ In both parent repos, `cka-shared` is a git submodule.
 If `handoff.json` changes:
 1. commit and push inside `cka-shared`
 2. commit the updated submodule pointer in the parent repo
+
+## AI agents
+
+Any future AI agent working in this repo must read:
+- `AI-WORKFLOW.md`
+- `WORKFLOW.md`
+- `handoff.json`
