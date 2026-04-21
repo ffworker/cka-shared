@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-04-20T08:34:00Z",
+  "lastUpdated": "2026-04-21T12:41:00Z",
   "sourceOfTruth": {
     "theoryLab": "cka-qa",
     "practicalLab": "cka-lab"
@@ -25,7 +25,12 @@
       "Environment Variables",
       "Secrets",
       "Manual Scaling",
-      "HPA"
+      "HPA",
+      "kubeconfig",
+      "RBAC",
+      "ServiceAccounts",
+      "Authentication",
+      "Certificates"
     ],
     "stableTopics": [
       "ReplicaSets",
@@ -39,7 +44,10 @@
       "Logging",
       "Monitoring",
       "Backup and Restore",
-      "etcd Backup"
+      "etcd Backup",
+      "OS Upgrades",
+      "TLS",
+      "ClusterRoles"
     ],
     "unstableConcepts": [
       "scheduler vs kubelet",
@@ -47,7 +55,9 @@
       "Service -> Endpoints -> Pod",
       "precise Pod definition under pressure",
       "multiple schedulers vs scheduler profiles",
-      "available replicas during rolling updates"
+      "available replicas during rolling updates",
+      "certificate vs private key",
+      "kubeconfig vs RBAC boundary"
     ],
     "recentQuizFindings": [
       "Definitions improve after repair drills",
@@ -57,7 +67,9 @@
       "New scheduling/control topics are stronger when tied to exact component boundaries",
       "Scheduler profiles remain conceptually weak and need repetition later",
       "Application lifecycle topics are landing better than scheduler profile details",
-      "Backup and restore is stronger than expected once tied back to etcd state"
+      "Backup and restore is stronger than expected once tied back to etcd state",
+      "Security access topics improved substantially after a mixed recap",
+      "Certificates still need sharper wording around public key vs private key"
     ]
   },
   "practicalFocus": {
@@ -72,7 +84,9 @@
       "practice rolling updates and watch available replica behavior",
       "compare multi-container Pods with init containers",
       "compare manual scaling, HPA, and VPA",
-      "compare etcd snapshot restore with YAML-only restore"
+      "compare etcd snapshot restore with YAML-only restore",
+      "compare kubeconfig, RBAC, ServiceAccounts, and authentication flow",
+      "compare certificate, private key, and CA trust roles"
     ],
     "readyForPractice": [
       "Pods",
@@ -96,7 +110,13 @@
       "Logging",
       "Monitoring",
       "Backup and Restore",
-      "etcd Backup"
+      "etcd Backup",
+      "kubeconfig",
+      "RBAC",
+      "ServiceAccounts",
+      "TLS",
+      "ClusterRoles",
+      "OS Upgrades"
     ],
     "notYetIntroduced": [
       "Jobs",
@@ -105,11 +125,9 @@
       "Affinity / Anti-Affinity",
       "Ingress",
       "Network Policies",
-      "OS Upgrades",
-      "Authentication",
-      "TLS",
-      "Certificates",
-      "Security Contexts"
+      "Security Contexts",
+      "Authentication deeper internals",
+      "Certificate API details"
     ]
   },
   "practicalFeedback": {
