@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-04-21T12:41:00Z",
+  "lastUpdated": "2026-04-21T14:53:00Z",
   "sourceOfTruth": {
     "theoryLab": "cka-qa",
     "practicalLab": "cka-lab"
@@ -30,7 +30,10 @@
       "RBAC",
       "ServiceAccounts",
       "Authentication",
-      "Certificates"
+      "Certificates",
+      "Resource Backup",
+      "Node Selectors",
+      "ConfigMaps"
     ],
     "stableTopics": [
       "ReplicaSets",
@@ -47,7 +50,8 @@
       "etcd Backup",
       "OS Upgrades",
       "TLS",
-      "ClusterRoles"
+      "ClusterRoles",
+      "Taints and Tolerations"
     ],
     "unstableConcepts": [
       "scheduler vs kubelet",
@@ -69,7 +73,9 @@
       "Application lifecycle topics are landing better than scheduler profile details",
       "Backup and restore is stronger than expected once tied back to etcd state",
       "Security access topics improved substantially after a mixed recap",
-      "Certificates still need sharper wording around public key vs private key"
+      "Certificates still need sharper wording around public key vs private key",
+      "ConfigMaps landed well as a continuation of env vars and Secrets",
+      "Node selector logic is understandable after repair, but still not yet fully automatic"
     ]
   },
   "practicalFocus": {
@@ -86,7 +92,9 @@
       "compare manual scaling, HPA, and VPA",
       "compare etcd snapshot restore with YAML-only restore",
       "compare kubeconfig, RBAC, ServiceAccounts, and authentication flow",
-      "compare certificate, private key, and CA trust roles"
+      "compare certificate, private key, and CA trust roles",
+      "compare ConfigMaps, env vars, and Secrets",
+      "compare nodeSelector with taints/tolerations and later affinity"
     ],
     "readyForPractice": [
       "Pods",
@@ -102,6 +110,7 @@
       "Commands and Arguments",
       "Environment Variables",
       "Secrets",
+      "ConfigMaps",
       "Multi-Container Pods",
       "Init Containers",
       "Manual Scaling",
@@ -111,17 +120,19 @@
       "Monitoring",
       "Backup and Restore",
       "etcd Backup",
+      "Resource Backup",
       "kubeconfig",
       "RBAC",
       "ServiceAccounts",
       "TLS",
       "ClusterRoles",
-      "OS Upgrades"
+      "OS Upgrades",
+      "Node Selectors",
+      "Taints and Tolerations"
     ],
     "notYetIntroduced": [
       "Jobs",
       "CronJobs",
-      "Taints and Tolerations",
       "Affinity / Anti-Affinity",
       "Ingress",
       "Network Policies",
